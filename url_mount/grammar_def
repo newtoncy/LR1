@@ -1,0 +1,14 @@
+文件 -> 表达式们 子路由们
+子路由们 -> 子路由们 子路由 | 子路由
+子路由 -> @ id 表达式们
+表达式们 -> 表达式们 表达式 | 表达式
+
+表达式 -> from module_path import id | 路由表达式
+module_path -> module_path . id | id
+
+路由表达式 -> 挂载点 to 内容表达式 (参数们)
+参数们 -> 参数们 id | id
+
+挂载点 -> mount str | route str
+
+内容表达式 -> id | str | sub_route id | sub_route str
